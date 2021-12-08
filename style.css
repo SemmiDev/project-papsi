@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../assets/fonts/Montserrat-Regular.ttf');
+}
+body {
+ background-color:  #28223F;
+}
+
+* {
+ font-family: Montserrat-Regular, sans-serif;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: .2s;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+  -moz-transition-property: all;
+  -moz-transition-timing-function: cubic-bezier(10,50,21,6);
+}
+
+.sammi-navbar {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top:  30px;
+}
+
+.btn{
+  color:#FEBB0B;
+  background-color: #231e39;
+  box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+  padding:10px 20px;
+  text-decoration:none;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+.btn:hover{
+  color:  black;
+  border:none;
+  border-radius: 10px;
+  background:#FEBB0B;
+  padding:20px 20px; #000;
+}
+
+
+footer {
+    background-color: #231E39;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    color:  #FEBB0B;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
