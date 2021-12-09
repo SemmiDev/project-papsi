@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Persegi Panjang</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- persegi -> [persegi panjang] -> lingkaran -> segitiga -->
+	<nav class="sammi-navbar">
+    	<a href="persegi.html" class="btn">◀</a>
+    	<a href="../index.html" class="btn">Home</a>
+    	<a href="lingkaran.html" class="btn">▶</a>
+	</nav>
+
+	<div class="container">
+	  <div class="card">
+	    <div class="card-header">
+	      <img src="../assets/shapes/persegi-panjang.png" alt="persegi panjang" />
+	    </div>
+	    <div class="card-body">
+	      <span class="tag tag-teal">Persegi Panjang</span>
+	      	<table>
+	      		<tr>
+	      			<td width="350px">LUAS</td>
+	      			<td>KELILING</td>
+	      		</tr>
+	      		<tr>
+	      			<td><br>
+	      				<input type="text" placeholder="Masukkan Panjang" class="input-p-luas">
+	      				<input type="text" placeholder="Masukkan Lebar" class="input-l-luas">
+	      			</td>
+	      			<td><br>
+	      				<input type="text" placeholder="Masukkan Panjang" class="input-p-kel">
+	      				<input type="text" placeholder="Masukkan Lebar" class="input-l-kel">
+	      			</td>
+	      		</tr>
+	      		<tr>
+	      			<td><input type="text" class="hasil-luas" disabled></td>
+	      			<td><input type="text" class="hasil-kel"disabled></td>
+	      		</tr>
+	      		<tr>
+	      			<br>
+	      			<td><button onclick="kalkulasiLuas()">Hitung Luas</button></td>
+	      			<td><button onclick="kalkulasiKel()">Hitung Keliling</button></td>
+	      		</tr>
+	      	</table>
+	    </div>
+	  </div>
+
+
+<footer>
+    <p>Copyright &copy; 2021</p>
+</footer>
+	  <script>
+	  	function kalkulasiLuas() {
+	  		let p = parseFloat(document.querySelector('.input-p-luas').value);
+	  		let l = parseFloat(document.querySelector('.input-l-luas').value);
+	  		document.querySelector('.hasil-luas').value = p * l;
+	  	}
+
+	  	function kalkulasiKel() {
+	  		let p = parseFloat(document.querySelector('.input-p-kel').value);
+	  		let l = parseFloat(document.querySelector('.input-l-kel').value);
+	  		document.querySelector('.hasil-kel').value = 2 * (p+l);
+	  	}
+	  </script>
+</body>
+</html>

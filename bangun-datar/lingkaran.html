@@ -3,31 +3,32 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Persegi</title>
+	<title>Lingkaran</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<!-- [persegi] -> persegi panjang -> lingkaran -> segitiga -->
+	<!-- persegi -> persegi panjang -> [lingkaran] -> segitiga -->
 	<nav class="sammi-navbar">
+    	<a href="persegi-panjang.html" class="btn">◀</a>
     	<a href="../index.html" class="btn">Home</a>
-    	<a href="persegi-panjang.html" class="btn">▶</a>
+    	<a href="segitiga.html" class="btn">▶</a>
 	</nav>
 
 	<div class="container">
 	  <div class="card">
 	    <div class="card-header">
-	      <img src="../assets/shapes/persegi.png" alt="persegi" />
+	      <img src="../assets/shapes/lingkaran.png" alt="lingkaran" />
 	    </div>
 	    <div class="card-body">
-	      <span class="tag tag-teal">Persegi</span>
+	      <span class="tag tag-teal">Lingkaran</span>
 	      	<table>
 	      		<tr>
 	      			<td width="350px">LUAS</td>
 	      			<td>KELILING</td>
 	      		</tr>
 	      		<tr>
-	      			<td><br><input type="text" placeholder="Masukkan Sisi" class="input-sisi-luas"></td>
-	      			<td><br><input type="text" placeholder="Masukkan Sisi" class="input-sisi-kel"></td>
+	      			<td><br><input type="text" placeholder="Masukkan Jari-Jari" class="input-jari-luas"></td>
+	      			<td><br><input type="text" placeholder="Masukkan Jari-Jari" class="input-jari-kel"></td>
 	      		</tr>
 	      		<tr>
 	      			<td><input type="text" class="hasil-luas" disabled></td>
@@ -48,13 +49,13 @@
 </footer>
 	  <script>
 	  	function kalkulasiLuas() {
-	  		let sisi = parseFloat(document.querySelector('.input-sisi-luas').value);
-	  		document.querySelector('.hasil-luas').value = sisi * sisi;
+	  		let r = parseFloat(document.querySelector('.input-jari-luas').value);
+	  		document.querySelector('.hasil-luas').value = 3.14 * (r * r);
 	  	}
 
 	  	function kalkulasiKel() {
-	  		let sisi = parseFloat(document.querySelector('.input-sisi-kel').value);
-	  		document.querySelector('.hasil-kel').value = 4 * sisi;
+	  		let r = parseFloat(document.querySelector('.input-jari-kel').value);
+	  		document.querySelector('.hasil-kel').value = 2 * 3.14 * r;
 	  	}
 	  </script>
 </body>
