@@ -3,31 +3,35 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Persegi</title>
+	<title>Trapesium</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<!-- [persegi] -> persegi panjang -> lingkaran -> segitiga -->
 	<nav class="sammi-navbar">
-    	<a href="trapesium.html" class="btn">◀</a>
+		<a href="layang.html" class="btn">◀</a>
     	<a href="../index.html" class="btn">Home</a>
-    	<a href="persegi-panjang.html" class="btn">▶</a>
+    	<a href="persegi.html" class="btn">▶</a>
 	</nav>
 
 	<div class="sari_container">
 	  <div class="card">
 	    <div class="card-header">
-	      <img src="../assets/shapes/persegi.png" alt="persegi" />
+	      <img src="../assets/shapes/trapesium.png" alt="Trapesium" />
 	    </div>
 	    <div class="card-body">
-	      <span class="tag tag-teal">Persegi</span>
+	      <span class="tag tag-teal">Trapesium</span>
 	      	<table>
 	      		<tr>
 	      			<td width="350px">LUAS</td>
 	      			<td>KELILING</td>
 	      		</tr>
 	      		<tr>
-	      			<td><br><input type="text" placeholder="Masukkan Sisi" class="input-sisi-luas"></td>
+	      			<td><br>
+	      				<input type="text" placeholder="Masukkan a" class="input-a-luas">
+	      				<input type="text" placeholder="Masukkan b" class="input-b-luas">
+	      				<input type="text" placeholder="Masukkan t" class="input-t-luas">
+	      			</td>
 	      			<td><br><input type="text" placeholder="Masukkan Sisi" class="input-sisi-kel"></td>
 	      		</tr>
 	      		<tr>
@@ -49,8 +53,10 @@
 </footer>
 	  <script>
 	  	function kalkulasiLuas() {
-	  		let sisi = parseFloat(document.querySelector('.input-sisi-luas').value);
-	  		document.querySelector('.hasil-luas').value = sisi * sisi;
+	  		let a = parseFloat(document.querySelector('.input-a-luas').value);
+	  		let b = parseFloat(document.querySelector('.input-b-luas').value);
+	  		let t = parseFloat(document.querySelector('.input-t-luas').value);
+	  		document.querySelector('.hasil-luas').value = ((a+b) * t) / 2;
 	  	}
 
 	  	function kalkulasiKel() {

@@ -55,7 +55,7 @@ body {
   padding:20px 20px; #000;
 }
 
-.container {
+.sari_container {
   margin: auto;
   display: flex;
   justify-content: space-evenly;

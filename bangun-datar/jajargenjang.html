@@ -3,32 +3,38 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Persegi</title>
+	<title>Jajargenjang</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<!-- [persegi] -> persegi panjang -> lingkaran -> segitiga -->
 	<nav class="sammi-navbar">
-    	<a href="trapesium.html" class="btn">◀</a>
+		<a href="belah-ketupat.html" class="btn">◀</a>
     	<a href="../index.html" class="btn">Home</a>
-    	<a href="persegi-panjang.html" class="btn">▶</a>
+    	<a href="layang.html" class="btn">▶</a>
 	</nav>
 
 	<div class="sari_container">
 	  <div class="card">
 	    <div class="card-header">
-	      <img src="../assets/shapes/persegi.png" alt="persegi" />
+	      <img src="../assets/shapes/jajargenjang.png" alt="Jajargenjang" />
 	    </div>
 	    <div class="card-body">
-	      <span class="tag tag-teal">Persegi</span>
+	      <span class="tag tag-teal">Jajargenjang</span>
 	      	<table>
 	      		<tr>
 	      			<td width="350px">LUAS</td>
 	      			<td>KELILING</td>
 	      		</tr>
 	      		<tr>
-	      			<td><br><input type="text" placeholder="Masukkan Sisi" class="input-sisi-luas"></td>
-	      			<td><br><input type="text" placeholder="Masukkan Sisi" class="input-sisi-kel"></td>
+	      			<td><br>
+	      				<input type="text" placeholder="Masukkan Alas" class="input-alas-luas">
+	      				<input type="text" placeholder="Masukkan Tinggi" class="input-tinggi-luas">
+	      			</td>
+	      			<td><br>
+	      				<input type="text" placeholder="Masukkan A" class="input-sisiA-kel">
+	      				<input type="text" placeholder="Masukkan B" class="input-sisiB-kel">
+	      			</td>
 	      		</tr>
 	      		<tr>
 	      			<td><input type="text" class="hasil-luas" disabled></td>
@@ -49,13 +55,15 @@
 </footer>
 	  <script>
 	  	function kalkulasiLuas() {
-	  		let sisi = parseFloat(document.querySelector('.input-sisi-luas').value);
-	  		document.querySelector('.hasil-luas').value = sisi * sisi;
+	  		let alas = parseFloat(document.querySelector('.input-alas-luas').value);
+	  		let tinggi = parseFloat(document.querySelector('.input-tinggi-luas').value);
+	  		document.querySelector('.hasil-luas').value = alas * tinggi;
 	  	}
 
 	  	function kalkulasiKel() {
-	  		let sisi = parseFloat(document.querySelector('.input-sisi-kel').value);
-	  		document.querySelector('.hasil-kel').value = 4 * sisi;
+	  		let a = parseFloat(document.querySelector('.input-sisiA-kel').value);
+	  		let b = parseFloat(document.querySelector('.input-sisiB-kel').value);
+	  		document.querySelector('.hasil-kel').value = 2 * ( a+ b);
 	  	}
 	  </script>
 </body>

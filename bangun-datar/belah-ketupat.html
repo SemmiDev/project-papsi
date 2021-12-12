@@ -3,31 +3,35 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Persegi</title>
+	<title>Belah Ketupat</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<!-- [persegi] -> persegi panjang -> lingkaran -> segitiga -->
 	<nav class="sammi-navbar">
-    	<a href="trapesium.html" class="btn">◀</a>
+		<a href="segitiga.html" class="btn">◀</a>
     	<a href="../index.html" class="btn">Home</a>
-    	<a href="persegi-panjang.html" class="btn">▶</a>
+    	<a href="jajargenjang.html" class="btn">▶</a>
 	</nav>
 
 	<div class="sari_container">
 	  <div class="card">
 	    <div class="card-header">
-	      <img src="../assets/shapes/persegi.png" alt="persegi" />
+	      <img src="../assets/shapes/belahketupat 2.png" alt="Belah Ketupat" />
 	    </div>
 	    <div class="card-body">
-	      <span class="tag tag-teal">Persegi</span>
+	      <span class="tag tag-teal">Belah Ketupat</span>
 	      	<table>
 	      		<tr>
 	      			<td width="350px">LUAS</td>
 	      			<td>KELILING</td>
 	      		</tr>
 	      		<tr>
-	      			<td><br><input type="text" placeholder="Masukkan Sisi" class="input-sisi-luas"></td>
+
+	      			<td><br>
+	      				<input type="text" placeholder="Masukkan D1" class="input-d1-luas">
+	      				<input type="text" placeholder="Masukkan D1" class="input-d2-luas">
+	      			</td>
 	      			<td><br><input type="text" placeholder="Masukkan Sisi" class="input-sisi-kel"></td>
 	      		</tr>
 	      		<tr>
@@ -49,8 +53,9 @@
 </footer>
 	  <script>
 	  	function kalkulasiLuas() {
-	  		let sisi = parseFloat(document.querySelector('.input-sisi-luas').value);
-	  		document.querySelector('.hasil-luas').value = sisi * sisi;
+	  		let d1 = parseFloat(document.querySelector('.input-d1-luas').value);
+	  		let d2 = parseFloat(document.querySelector('.input-d2-luas').value);
+	  		document.querySelector('.hasil-luas').value = (d1 * d2) / 2;
 	  	}
 
 	  	function kalkulasiKel() {

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Layang-Layang</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- [persegi] -> persegi panjang -> lingkaran -> segitiga -->
+	<nav class="sammi-navbar">
+		<a href="jajargenjang.html" class="btn">◀</a>
+    	<a href="../index.html" class="btn">Home</a>
+    	<a href="trapesium.html" class="btn">▶</a>
+	</nav>
+
+	<div class="sari_container">
+	  <div class="card">
+	    <div class="card-header">
+	      <img src="../assets/shapes/layang.png" alt="Layang-Layang" />
+	    </div>
+	    <div class="card-body">
+	      <span class="tag tag-teal">Layang-Layang</span>
+	      	<table>
+	      		<tr>
+	      			<td width="350px">LUAS</td>
+	      			<td>KELILING</td>
+	      		</tr>
+	      		<tr>
+	      			<td><br>
+	      				<input type="text" placeholder="Masukkan D1" class="input-d1-luas">
+	      				<input type="text" placeholder="Masukkan D1" class="input-d2-luas">
+	      			</td>
+	      			<td><br>
+	      				<input type="text" placeholder="Masukkan A" class="input-a-kel">
+	      				<input type="text" placeholder="Masukkan B" class="input-b-kel">
+	      				<input type="text" placeholder="Masukkan C" class="input-c-kel">
+	      				<input type="text" placeholder="Masukkan D" class="input-d-kel">
+	      			</td>
+	      		</tr>
+	      		<tr>
+	      			<td><input type="text" class="hasil-luas" disabled></td>
+	      			<td><input type="text" class="hasil-kel"disabled></td>
+	      		</tr>
+	      		<tr>
+	      			<br>
+	      			<td><button onclick="kalkulasiLuas()">Hitung Luas</button></td>
+	      			<td><button onclick="kalkulasiKel()">Hitung Keliling</button></td>
+	      		</tr>
+	      	</table>
+	    </div>
+	  </div>
+
+
+<footer>
+    <p>Copyright &copy; 2021</p>
+</footer>
+	  <script>
+	  	function kalkulasiLuas() {
+	  		let d1 = parseFloat(document.querySelector('.input-d1-luas').value);
+	  		let d2 = parseFloat(document.querySelector('.input-d2-luas').value);
+	  		document.querySelector('.hasil-luas').value = (d1 * d2) / 2;
+	  	}
+
+	  	function kalkulasiKel() {
+	  		let a = parseFloat(document.querySelector('.input-a-kel').value);
+	  		let b = parseFloat(document.querySelector('.input-b-kel').value);
+	  		let c = parseFloat(document.querySelector('.input-c-kel').value);
+	  		let d = parseFloat(document.querySelector('.input-d-kel').value);
+	  		document.querySelector('.hasil-kel').value = a+b+c+d;
+	  	}
+	  </script>
+</body>
+</html>

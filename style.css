@@ -4,9 +4,6 @@
   font-family: 'Montserrat-Regular';
   src: url('../assets/fonts/Montserrat-Regular.ttf');
 }
-body {
- background-color:  #28223F;
-}
 
 * {
  font-family: Montserrat-Regular, sans-serif;
@@ -17,13 +14,57 @@ body {
   -moz-transition-timing-function: cubic-bezier(10,50,21,6);
 }
 
-.sammi-navbar {
+body {
+  background-color:  #28223F;
+  height:  1000px;
+}
+
+@media screen and (min-device-width:698px) {
+  div#vinna_showgrid {
+    width: 698px;
+    margin: auto;
+  }
+}
+
+div.cahya_column {
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 2px;
+}
+
+img {
+  border-radius: 25px;
+  border: solid 2px #02899C;
+}
+
+img:hover {
+  border-color: black;
+  transform: scale(1.1);
+}
+
+.zuhri_row {
+  width: 100%;
+  margin: auto;
+  background: #d2c49b;
+
+}
+
+@media (min-device-width: 698px) {
+  .cahya_column {
+    width: 230px;
+    height: 230px;
+    display: inline;
+    float: left;
+  }
+}
+
+.alfarazi-navbar {
   text-align: center;
   margin-bottom: 50px;
   margin-top:  30px;
 }
 
-.btn{
+.lena_btn{
   color:#FEBB0B;
   background-color: #231e39;
   box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
@@ -33,14 +74,13 @@ body {
   text-transform:uppercase;
 }
 
-.btn:hover{
+.lena_btn:hover{
   color:  black;
   border:none;
   border-radius: 10px;
   background:#FEBB0B;
   padding:20px 20px; #000;
 }
-
 
 footer {
     background-color: #231E39;
@@ -58,4 +98,3 @@ footer p {
     margin: 10px 0;
     font-weight: bold;
 }
-
