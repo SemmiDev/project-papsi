@@ -1,16 +1,18 @@
-# PROJECT MATKUL PAPSI
-## KALKULATOR BANGUN DATAR
+## PROJECT PAPSI
 
-+____________+
-|  JOB DESC  |
-+------------+
+# KALKULATOR BANGUN DATAR
 
-1. Alfarazi, Zuhri: 
-	- design shapes (bangun datar) + ket + rumus
++____________________+\
+|  **PEMBAGIAN TUGASS**  |\
++____________________+\
 
-2. Sammi:
-	- Implement all layouts
-	- handle JS untuk kalkulasi semua bangun datar
+- Alfarazi, Zuhri: 
+	- Design shapes (bangun datar) + rumus untuk (home dan details)
+- Cahya, Lena, Kak vina: 
+	- Design tampilan
+- Sammi:
+	- Implement tampilan
+	- Handle JS untuk kalkulasi bangun datar
 
-3. Cahya, Lena, Kak vina: 
-	- design all layouts
+## DEMO
+[project-papsi.netlify.app](project-papsi.netlify.app)
