@@ -2,13 +2,12 @@
 
 # KALKULATOR BANGUN DATAR
 
-
-`PEMBAGIAN TUGASS`
+`PEMBAGIAN TUGASs`
 
 - **Alfarazi & Zuhri**
 	- Design shapes (bangun datar) + rumus untuk (home dan details)
 - **Cahya, Lena & Kak vina** 
-	- Design tampilan
+	- Design tampilan/layout
 - **Sammi**:
 	- Implement tampilan
 	- Handle JS untuk kalkulasi bangun datar
